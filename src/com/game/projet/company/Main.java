@@ -11,12 +11,14 @@ public class Main {
         Timer chron = new Timer();
         chron.schedule( new  TimerTask(){
 
-
+                int compteur =0 ; // pour arrêter le chronomètre
             @Override
             public void run() {
-                System.out.println("");
+
+                System.out.println("Hi gys");
+
             }
-        },1000,1000);
+        },1000,1000);// boucle infinie. delay en milliesecondes.
 
 
 
