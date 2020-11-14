@@ -8,6 +8,7 @@ public class Main {
     public static void main(String[] args) {
 
         /******************************1 ère Méthode ***********************/
+        /*
         Timer chron = new Timer();
         chron.schedule( new  TimerTask(){
 
@@ -23,13 +24,19 @@ public class Main {
 
             }
         },1000,1000);// boucle infinie. delay en milliesecondes.
+        */
+
 
 
 
 
 
         /************************************************************/
+        /************************    2 ième Méthode  ****************/
 
+        /*
+        Timer chrono = new Timer();
+        chrono.schedule(new ExoTimer(), 1000,1000);
 
 
 	// write your code here
