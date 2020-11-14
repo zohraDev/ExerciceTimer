@@ -1,5 +1,6 @@
 package com.game.projet.company;
 
+import java.io.IOException;
 import java.util.Timer;
 import java.util.TimerTask;
 
@@ -38,6 +39,7 @@ public class Main {
 
         Timer chrono = new Timer();
         chrono.schedule(new JeuxAlea(), 1000,1000);
+
 
 
 	// write your code here

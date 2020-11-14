@@ -10,32 +10,38 @@ public class JeuxAlea extends TimerTask {
    Scanner scan=new Scanner(System.in);
    int userNumber;
    int counter =5;
+    private int generateNumber;
 
     @Override
     public void run() {
+        if(counter==5){
+            System.out.println("Give a number");
 
-        System.out.println("Il rest "+counter);
-        counter--;
+        }
+
         // generate a random number between 1 and 6
 
 
-        if (counter==0){
-            int generateNumber =rand.nextInt(5)+1 ;//
-            userNumber =scan.nextInt();
-            if(userNumber==generateNumber){
-                System.out.println("Congratulation ");
-            }else {
-                System.out.println("You lost");
-            }
-            cancel();
-        }
+        counter--;
+        //System.out.println("Time  "+counter);
+
+        if (counter==0) {
+           generateNumber =rand.nextInt(5)+1 ;//
+            //System.out.println(generateNumber);
+            userNumber=scan.nextInt();
+
+                  if (userNumber == generateNumber) {
+                      System.out.println("Congratulation ");
 
 
+                  } else {
+                      System.out.println("You lost");
 
 
-
-
-
+                  }
+                  cancel();
+                  System.exit(0);
+              }
 
     }
 }
