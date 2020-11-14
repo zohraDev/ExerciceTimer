@@ -34,9 +34,10 @@ public class Main {
         /************************************************************/
         /************************    2 ième Méthode  ****************/
 
-        /*
+
+
         Timer chrono = new Timer();
-        chrono.schedule(new ExoTimer(), 1000,1000);
+        chrono.schedule(new JeuxAlea(), 1000,1000);
 
 
 	// write your code here

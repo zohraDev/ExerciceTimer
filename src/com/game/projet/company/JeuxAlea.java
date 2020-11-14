@@ -13,13 +13,15 @@ public class JeuxAlea extends TimerTask {
 
     @Override
     public void run() {
-        System.out.println("Give a number between 1 and 6");
+
+        System.out.println("Il rest "+counter);
         counter--;
         // generate a random number between 1 and 6
-        int generateNumber =rand.nextInt(5)+1 ;//
-        userNumber =scan.nextInt();
+
 
         if (counter==0){
+            int generateNumber =rand.nextInt(5)+1 ;//
+            userNumber =scan.nextInt();
             if(userNumber==generateNumber){
                 System.out.println("Congratulation ");
             }else {
